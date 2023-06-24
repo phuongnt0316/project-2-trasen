@@ -1,7 +1,7 @@
 import React from "react";
 
-function News({renderPro}) {
-  console.log("New",renderPro);
+function News() {
+  
   return (
     <>
       <div className="news" id="new">

@@ -1,4 +1,4 @@
-import { BrowserRouter, Navigate, Route, Routes,useNavigate } from "react-router-dom";
+import { Route, Routes,useNavigate } from "react-router-dom";
 import Menu from "./components/Menu";
 import Home from "./components/Home";
 import Introduce from "./components/Introduce";
@@ -8,6 +8,7 @@ import Contents from "./components/Contents";
 import Footer from "./components/Footer";
 import Products from "./components/Products";
 import { useState } from "react";
+import DetailProduct from "./components/DetailProduct";
 function App() {
   let initPro = {
       productIs: 0,
@@ -24,7 +25,7 @@ function App() {
     setProduct(pro)
     }
     console.log("productApp:",pro);
-    navigate("/News")
+    navigate("/DetailProduct")
    }
   
   return (
@@ -32,6 +33,7 @@ function App() {
       <>
         <Menu />
         <Routes>
+          <Route path="/DetailProduct" element={<DetailProduct  renderPro={product}/>}></Route>
           <Route path="/" element={<Home />}></Route>
           <Route path="/Home" element={<Home />}></Route>
           <Route path="/Introduce" element={<Introduce />}></Route>
@@ -39,7 +41,7 @@ function App() {
             path="/Products"
             element={<Products onClickProduct={handleClick}/>}
           ></Route>
-          <Route path="/News" element={<News renderPro={product}/>}></Route>
+          <Route path="/News" element={<News/>}></Route>
           <Route path="/Contents" element={<Contents />}></Route>
           <Route path="/Contact" element={<Contact />}></Route>
         </Routes>

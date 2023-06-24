@@ -142,123 +142,124 @@ function Home() {
   {/* end banner giothieu*/}
   {/* nghenhan */}
   <section id="banner-3" className="banner">
-    <div className="banner-img">
-      <div className="box-img">
-        <img src="Pictures/trang-chu/bannernghenhan.png" alt="" />
-        <div className="box-content">
-          <div className="product-header common-header text-center">
-            <h1>NGHỆ NHÂN TRÀ ĐẠO</h1>
-          </div>
-          <div className="row row-cols-1 row-cols-md-3 row-cols-md-5 card-group">
-            <div className="col">
-              <div className="card">
-                <img
-                  src="Pictures/trang-chu/professional-tea-1.png"
-                  className="card-img-top"
-                  alt="..."
-                />
-                <div className="card-body">
-                  <h5 className="card-title">Nn. Nguyễn Cao Sơn</h5>
-                  <p className="card-text">
-                    Nguyễn Cao Sơn được chọn làm đại diện quảng bá văn hóa Trà
-                    Việt tại ngôi nhà 87 Mã Mây, Hà Nội.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="col">
-              <div className="card">
-                <img
-                  src="Pictures/trang-chu/professional-tea-2.png"
-                  className="card-img-top"
-                  alt="..."
-                />
-                <div className="card-body">
-                  <h5 className="card-title">Nn. Hướng Anh Sướng</h5>
-                  <p className="card-text">
-                    Truyền nhân đời thứ 6 của dòng trà Trường Xuân, Hà Nội chia
-                    sẻ về nghệ thuật trà đạo, lĩnh vực mà anh dành hơn nửa cuộc
-                    đời nghiên cứu một cách đam mê
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="col">
-              <div className="card">
-                <img
-                  src="Pictures/trang-chu/professional-tea-3.png"
-                  className="card-img-top"
-                  alt="..."
-                />
-                <div className="card-body">
-                  <h5 className="card-title">Nn. Nguyễn Thị Dần</h5>
-                  <p className="card-text">
-                    Vẫn tự tay chọn hoa, tách gạo, thực hiện từng công đoạn ướp
-                    trà sen. Cũng chính bởi nghiện trà, bởi yêu nghề nên cô
-                    thiếu nữ Hà thành năm xưa vẫn say hương vị trà sen Tây Hồ
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="col">
-              <div className="card">
-                <img
-                  src="Pictures/trang-chu/professional-tea-4.png"
-                  className="card-img-top"
-                  alt="..."
-                />
-                <div className="card-body">
-                  <h5 className="card-title">Nn. Nguyễn Hoài Linh</h5>
-                  <p className="card-text">
-                    Vô địch toàn thế giới trong cuộc thi Tea Master Cup
-                    International 2018 về pha trà được tổ chức tại Huế
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="col">
-              <div className="card">
-                <img
-                  src="Pictures/trang-chu/professional-tea-5.png"
-                  className="card-img-top"
-                  alt="..."
-                />
-                <div className="card-body">
-                  <h5 className="card-title">Nn. Viên Trân</h5>
-                  <p className="card-text">
-                    Sinh ra và lớn lên trong một gia đình quý tộc phong kiến,
-                    trong một môi trường mà việc ướng trà và trà cực ngon, cực
-                    thượng hạng là điều không thể thiếu trong nhà
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          {/* find */}
-          <section className="find">
-            <div className="product-header common-header text-center">
-              <h1>MUA NGAY</h1>
-            </div>
-            <form className="d-flex" role="search">
-              <input
-                className="form-control me-2"
-                type="search"
-                placeholder="Số điện thoai/email"
-                aria-label="Search"
-              />
-              <button
-                className="btn btn-outline-success btn-primary"
-                type="submit"
-              >
-                GỬI
-              </button>
-            </form>
-          </section>
-          {/* end find */}
+  <div className="banner-img">
+    <div className="box-img">
+      <img src="Pictures/trang-chu/bannernghenhan.png" alt="" />
+      <div className="box-content">
+        <div className="product-header common-header text-center">
+          <h1>NGHỆ NHÂN TRÀ ĐẠO</h1>
         </div>
+        <div className="row ">
+          <div className="col-md-2">
+            <div className="card">
+              <img
+                src="Pictures/trang-chu/professional-tea-1.png"
+                className="card-img-top"
+                alt="..."
+              />
+              <div className="card-body">
+                <h5 className="card-title">Nn. Nguyễn Cao Sơn</h5>
+                <p className="card-text">
+                  Nguyễn Cao Sơn được chọn làm đại diện quảng bá văn hóa Trà
+                  Việt tại ngôi nhà 87 Mã Mây, Hà Nội.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="col-md-2">
+            <div className="card">
+              <img
+                src="Pictures/trang-chu/professional-tea-2.png"
+                className="card-img-top"
+                alt="..."
+              />
+              <div className="card-body">
+                <h5 className="card-title">Nn. Hướng Anh Sướng</h5>
+                <p className="card-text">
+                  Truyền nhân đời thứ 6 của dòng trà Trường Xuân, Hà Nội chia sẻ
+                  về nghệ thuật trà đạo, lĩnh vực mà anh dành hơn nửa cuộc đời
+                  nghiên cứu một cách đam mê
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="col-md-2">
+            <div className="card">
+              <img
+                src="Pictures/trang-chu/professional-tea-3.png"
+                className="card-img-top"
+                alt="..."
+              />
+              <div className="card-body">
+                <h5 className="card-title">Nn. Nguyễn Thị Dần</h5>
+                <p className="card-text">
+                  Vẫn tự tay chọn hoa, tách gạo, thực hiện từng công đoạn ướp
+                  trà sen. Cũng chính bởi nghiện trà, bởi yêu nghề nên cô thiếu
+                  nữ Hà thành năm xưa vẫn say hương vị trà sen Tây Hồ
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="col-md-2">
+            <div className="card">
+              <img
+                src="Pictures/trang-chu/professional-tea-4.png"
+                className="card-img-top"
+                alt="..."
+              />
+              <div className="card-body">
+                <h5 className="card-title">Nn. Nguyễn Hoài Linh</h5>
+                <p className="card-text">
+                  Vô địch toàn thế giới trong cuộc thi Tea Master Cup
+                  International 2018 về pha trà được tổ chức tại Huế
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="col-md-2">
+            <div className="card">
+              <img
+                src="Pictures/trang-chu/professional-tea-5.png"
+                className="card-img-top"
+                alt="..."
+              />
+              <div className="card-body">
+                <h5 className="card-title">Nn. Viên Trân</h5>
+                <p className="card-text">
+                  Sinh ra và lớn lên trong một gia đình quý tộc phong kiến,
+                  trong một môi trường mà việc ướng trà và trà cực ngon, cực
+                  thượng hạng là điều không thể thiếu trong nhà
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        {/* find */}
+        <section className="find">
+          <div className="product-header common-header text-center">
+            <h1>MUA NGAY</h1>
+          </div>
+          <form className="d-flex" role="search">
+            <input
+              className="form-control me-2"
+              type="search"
+              placeholder="Số điện thoai/email"
+              aria-label="Search"
+            />
+            <button
+              className="btn btn-outline-success btn-primary"
+              type="submit"
+            >
+              GỬI
+            </button>
+          </form>
+        </section>
+        {/* end find */}
       </div>
     </div>
-  </section>
+  </div>
+</section>
+
   {/* end nghenhan */}
     </>
 

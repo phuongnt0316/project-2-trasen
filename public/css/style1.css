@@ -21,27 +21,39 @@
     margin: 0;
     font-family: font-svn;
 }
-#product  .slick-slide {
-    margin: 0px 10px;
-  }
+.slider {
+    
+    width: 1280px;
+    margin: 45px 100px 0 100px;
+}
 
-  #product .slick-slide img {
+.slick-slide {
+  margin: 0px 30px;
+}
 
-    border-radius: 50%;
-    width: 80%;
-  }
-  #product .slick-prev:before,
-  #product .slick-next:before {
-    color: #aabc44;
-  }
-  #product .slick-slide {
-    transition: all ease-in-out .3s;
-    /* opacity: .2; */
-  }
+.slick-slide img {
+  width: 100%;
+}
+
+.slick-prev:before,
+.slick-next:before {
+    font-size: 25px;
+  color:#bd945f;
+}
+
+
+.slick-slide {
+  transition: all ease-in-out .3s;
+  
+} 
 .section-menu{
     
     width: 1280px;
     margin: 0 auto;
+
+}
+#banner-intro{
+    padding-bottom: 650px;
 
 }
 li{
@@ -154,7 +166,7 @@ img{
 }
 #banner-3 .box-content{
     width: 1280px;
-    margin: 65px 160px 0px 160px
+    /* margin: 65px 160px 0px 160px */
 }
 #banner-3 .col .card{
     border: none;
@@ -332,6 +344,11 @@ section .find{
     margin: auto;
 }
 /* chi tiet san pham */
-#banner-productct{
-    background-image: url(Pictures/chitietsanpham/bg-chitiet.jpg);
+
+.list-img img{
+    width: 150px;
+    height: 150px;
+}
+.intro-product .content-2{
+    text-align: justify;
 }

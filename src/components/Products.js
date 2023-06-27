@@ -16,7 +16,7 @@ function Products({onClickProduct}) {
     },
     {
       productId: 2,
-      productName: "Trà Shan Tuyết",
+      productName: "Trà Xanh",
       productImage: "Pictures/san-pham/pr-2.png",
       productPrice: 60000,
       productRating: 4,

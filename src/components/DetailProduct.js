@@ -57,10 +57,31 @@ function DetailProduct({ renderPro }) {
       productInstruct3: "Để trà 4-6 phút",
     },
   ];
+  let rate = [];
+    for (var i = 0; i < renderPro.productRating; i++) {
+      rate.push(<i class="fa-solid fa-star" key={i}></i>);
+    }
+    for (var i = 0; i <5- renderPro.productRating; i++) {
+      rate.push(<i class="fa-regular fa-star" key={5-i}></i>);
+    }
 
  let elementDetail = listDetailPro.filter(product=> product.productId === renderPro.productId);
   console.log("Detail", renderPro.productId);
-  console.log("elementProduct",elementDetail);
+  console.log("elementProduct",elementDetail[0].productId);
+  let pro={
+    productId: 0,
+    productImage1: "",
+    productImage2: "",
+    productImage3: "",
+    productImageM1: "",
+    productImageM2: "",
+    productstrucst: ``,
+    productInstruct1: "",
+    productInstruct2: " ",
+    productInstruct3: "",
+  }
+  pro=elementDetail[0];
+  console.log("pro",pro.productId);
 
   return (
     <section id="chitiet">
@@ -77,32 +98,28 @@ function DetailProduct({ renderPro }) {
                 <div className="col-md-3">
                   <section className="vertical-center slider list-img">
                     <div>
-                      <img src="./Pictures/chitietsanpham/img-1.jpg" />
+                      <img src={pro.productImage1} />
                     </div>
                     <div>
-                      <img src="./Pictures/chitietsanpham/img-2.jpg" />
+                      <img src={pro.productImage2} />
                     </div>
                     <div>
-                      <img src="./Pictures/chitietsanpham/img-3.jpg" />
+                      <img src={pro.productImage3} />
                     </div>
                   </section>
                 </div>
                 <div className="col-md-4 img-main">
-                  <img src="Pictures/chitietsanpham/main.jpg" alt="" />
+                  <img src={pro.productImageM1} alt="" />
                 </div>
                 <div className="col-md-4">
-                  <h4>Trà Shan Tuyết</h4>
+                  <h4>{renderPro.productName}</h4>
                   <div className="d-flex">
-                    <i className="fa-solid fa-star" />
-                    <i className="fa-solid fa-star" />
-                    <i className="fa-solid fa-star" />
-                    <i className="fa-solid fa-star" />
-                    <i className="fa-solid fa-star" />
-                    <span>(17)</span>
+                    {rate}
+                    <span>({renderPro.productReview})</span>
                   </div>
                   <div className="d-flex mb-2">
                     <h5 className="mt-2 me-3">
-                      50.000 <span>VND</span>
+                      {renderPro.productPrice} <span>VND</span>
                     </h5>
                     <select name="" id="">
                       <option value={200}>200g</option>
@@ -111,26 +128,7 @@ function DetailProduct({ renderPro }) {
                     <p />
                   </div>
                   <div className="content-2">
-                    <p>SẢN PHẨM ĐẠT CHUẨN VỆ SINH AN TOÀN THỰC PHẨM </p>
-                    <p>
-                      Trà Shan Tuyết (Chè Shan Tuyết) hay còn được gọi là trag
-                      tuyết. Đây là loại trà đặc sản cửa các đồng bào tộc người
-                      Tày, Giao, Mông và là đặc sản của các tỉnh như Hà Giang,
-                      Điện Biên, Lào Cai
-                    </p>
-                    <p>
-                      Đặc điểm của trà Shan Tuyết là búp trà (cánh trà) rất to
-                      và màu trắng, dưới cánh trà phủ một lớp lông tơ mịn màu
-                      trắng
-                    </p>
-                    <p>
-                      Cây trà Shan Tuyết cổ thụ rất lớn, có khi vài người lớn
-                      vòng tay ôm. Mộc ở trên núi cao hơn 1200m, quanh năm mây
-                      mù và lạnh. Sự chênh lệch nhiệt độ giữa ngày và đêm là rất
-                      lớn, chính bởi có điều kiện tự nhiên thú vị như vậy nên đó
-                      là nét độc đáo tạo ra một hương vị trà Shan Tuyết cổ thụ
-                      thơm ngon.
-                    </p>
+                    {pro.productstrucst}
                   </div>
                 </div>
               </div>
@@ -138,21 +136,21 @@ function DetailProduct({ renderPro }) {
           </div>
           <div className="instruct row">
             <div className="instruct-content col-md-3">
-              <h3>Hướng dẫn pha trà Shan Tuyết</h3>
+              <h3>Hướng dẫn pha {renderPro.productName} </h3>
               <p>
                 <i className="fa-solid fa-droplet" />
-                Đổ vào ấm từ 150-200ml, nước sôi nhiệt độ 85 độ C{" "}
+                {pro.productInstruct1}
               </p>
               <p>
-                <i className="fa-solid fa-spoon" /> 1-2 nắm trà, khoảng 20-30
-                gram
+                <i className="fa-solid fa-spoon" /> {pro.productInstruct2}
+                
               </p>
               <p>
-                <i className="fa-regular fa-clock" /> Để trà 4-6 phút
+                <i className="fa-regular fa-clock" /> {pro.productInstruct3}
               </p>
             </div>
             <div className="instruct-img col-md-6">
-              <img src="Pictures/chitietsanpham/phatra.jpg" alt="" />
+              <img src={pro.productImageM2} alt="" />
             </div>
           </div>
         </div>

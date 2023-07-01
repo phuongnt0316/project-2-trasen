@@ -9,6 +9,7 @@ import Footer from "./components/Footer";
 import Products from "./components/Products";
 import { useState } from "react";
 import DetailProduct from "./components/DetailProduct";
+import Cart from "./components/Cart";
 function App() {
   let initPro = {
       productIs: 0,
@@ -44,6 +45,7 @@ function App() {
           <Route path="/News" element={<News/>}></Route>
           <Route path="/Contents" element={<Contents />}></Route>
           <Route path="/Contact" element={<Contact />}></Route>
+          <Route path="/Cart" element={<Cart />}></Route>
         </Routes>
         <Footer />
       </>

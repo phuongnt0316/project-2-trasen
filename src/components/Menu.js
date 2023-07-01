@@ -40,6 +40,13 @@ function Menu() {
                     {" "}
                     <Link to={"/Contact"} className="action">Liên hệ</Link>
                   </li>
+                  <li className="nav-child">
+                    {" "}
+                    <li className="nav-child">
+                    {" "}
+                    <Link to={"/Cart"}><i class="fa-solid fa-cart-shopping"></i></Link>
+                  </li>
+                  </li>
                 </ul>
               </nav>
             </div>
